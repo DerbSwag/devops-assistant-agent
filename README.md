@@ -6,6 +6,13 @@ AI-powered DevOps Assistant built on **Google Cloud Agent Builder** with RAG (Re
 [![Gemini](https://img.shields.io/badge/Gemini-2.5%20Pro-8E75B2?style=for-the-badge&logo=google&logoColor=white)](https://ai.google.dev/)
 [![RAG](https://img.shields.io/badge/RAG-Vertex%20AI%20Search-34A853?style=for-the-badge&logo=google-cloud&logoColor=white)](https://cloud.google.com/vertex-ai-search-and-conversation)
 
+## 📸 Demo
+
+<!-- Replace with actual screenshot -->
+> ![DevOps Assistant Demo](assets/demo-screenshot.png)
+>
+> *Agent ตอบคำถามเกี่ยวกับ LLM Gateway architecture จาก knowledge base*
+
 ## 🏗️ Architecture
 
 ```
@@ -95,15 +102,22 @@ Use Preview mode and ask:
 
 ```
 devops-assistant-agent/
-├── README.md
+├── .github/workflows/ci.yml     # CI: lint markdown + validate structure
+├── assets/                      # Screenshots and images
 ├── docs/
 │   ├── agent-instructions.md    # System prompt / Instructions
 │   └── architecture.md          # Detailed architecture doc
-├── knowledge-base/
-│   ├── llmops-*.md/txt          # LLMOps platform files
-│   ├── ansible-*.txt            # Ansible playbook files
-│   └── terraform-*.txt          # Terraform config files
-└── .gitignore
+├── examples/
+│   └── query_agent.py           # Python API integration example
+├── knowledge-base/              # 28 files for Data Store (RAG)
+│   ├── llmops-*.md/txt
+│   ├── ansible-*.txt
+│   └── terraform-*.txt
+├── scripts/
+│   └── upload-kb.sh             # Upload knowledge base to GCS
+├── .gitignore
+├── LICENSE
+└── README.md
 ```
 
 ## 💰 Cost

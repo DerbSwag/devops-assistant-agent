@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Lint Markdown
+        uses: DavidAnson/markdownlint-cli2-action@v19
+        with:
+          globs: "**/*.md"
+          config: ".markdownlint.json"
+
+      - name: Validate knowledge-base structure
+        run: |
+          echo "Checking knowledge-base files..."
+          count=$(find knowledge-base -type f | wc -l)
+          echo "Found $count files in knowledge-base/"
+          if [ "$count" -lt 1 ]; then
+            echo "ERROR: knowledge-base/ is empty"
+            exit 1
+          fi
+          echo "✅ Structure valid ($count files)"
