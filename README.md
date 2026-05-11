@@ -8,10 +8,14 @@ AI-powered DevOps Assistant built on **Google Cloud Agent Builder** with RAG (Re
 
 ## 📸 Demo
 
-<!-- Replace with actual screenshot -->
-> ![DevOps Assistant Demo](assets/demo-screenshot.png)
->
-> *Agent ตอบคำถามเกี่ยวกับ LLM Gateway architecture จาก knowledge base*
+![DevOps Assistant Demo](assets/demo-screenshot.png)
+*Agent ตอบคำถามเกี่ยวกับ LLM Gateway architecture จาก knowledge base*
+
+![Agent Configuration](assets/agent-config.png)
+*Agent Builder Studio — ตั้งค่า Instructions, Model, และ Data Store*
+
+![Deployment Success](assets/deployment-success.png)
+*Deploy สำเร็จพร้อมใช้งาน*
 
 ## 🏗️ Architecture
 
