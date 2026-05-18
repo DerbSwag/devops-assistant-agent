@@ -1,4 +1,4 @@
-# 🤖 DevOps Assistant Agent
+﻿# 🤖 DevOps Assistant Agent
 
 AI-powered DevOps Assistant built on **Google Cloud Agent Builder** with RAG (Retrieval-Augmented Generation) — answers questions about Terraform, Ansible, Docker, CI/CD, and LLMOps using real production code as knowledge base.
 
@@ -6,6 +6,19 @@ AI-powered DevOps Assistant built on **Google Cloud Agent Builder** with RAG (Re
 [![Gemini](https://img.shields.io/badge/Gemini-2.5%20Pro-8E75B2?style=for-the-badge&logo=google&logoColor=white)](https://ai.google.dev/)
 [![RAG](https://img.shields.io/badge/RAG-Vertex%20AI%20Search-34A853?style=for-the-badge&logo=google-cloud&logoColor=white)](https://cloud.google.com/vertex-ai-search-and-conversation)
 
+
+## 📈 Results
+
+| Metric | Value |
+|--------|-------|
+| Knowledge base size | **28 files** (Terraform + Ansible + LLMOps) |
+| Response time | **<3 seconds** |
+| Infrastructure cost | **฿0** (Google Cloud trial credits ฿32,504) |
+| Model | Gemini 2.5 Pro with RAG grounding |
+| Accuracy | Grounded answers from real production code |
+| Languages supported | Thai + English |
+
+---
 ## 📸 Demo
 
 ![DevOps Assistant Demo](assets/demo-screenshot.png)
